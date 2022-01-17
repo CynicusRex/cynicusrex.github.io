@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Arch Linux install proces</title>
+  <meta name="title" content="Arch Linux install proces">
+  <meta name="description" content="Arch Linux install proces">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="keywords" content="endeavouros, arch">
+  <meta name="author" content="Angelino Desmet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cynicusrex.com/file/install.html">
+  <meta property="og:title" content="Arch Linux install proces">
+  <meta property="og:description" content="Arch Linux install proces">
+  <meta property="og:image" content="https://www.cynicusrex.com/img/crown.png">
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="128" />
+  <meta property="og:image:height" content="128" />
+
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://www.cynicusrex.com/file/install.html">
+  <meta property="twitter:title" content="Arch Linux install proces">
+  <meta property="twitter:description" content="Arch Linux install proces">
+  <meta property="twitter:image" content="https://www.cynicusrex.com/img/crown.png">
+
+  <link rel="icon" type="image/png" href="../img/favicon-128.png">
+  <link rel="canonical" href="https://www.cynicusrex.com/file/install.html">
+  <link rel="stylesheet" type='text/css' media='screen' href="../css/style.css">
+</head>
+
+<body>
+  <div class="readability">
+    <h1><a href="https://endeavouros.com">EndeavourOS</a> install process.</h1>
+    <p class="sub-title">An Arch based lightweight Linux operating system.</p>
+    <hr class="hr-long">
+
+    <ol>
+      <li>Backup everything you don’t want to lose on a separate medium. It helps if you have a second computer if something breaks and you can't do anything on your current machine.</li>
+      <li><a href="https://endeavouros.com/latest-release/">Download the OS</a> and <a href="https://discovery.endeavouros.com/installation/create-install-media-usb-key/2021/03/">create the install medium</a> (e.g., USB key).</li>
+      <li>To launch the OS from the USB key: reboot and press F2, or F11 (or one of the other F keys; during the start up it usually mentions which button to push to change boot device), or DELETE during the startup to pick/edit the drive to boot from.</li>
+      <li><a href="https://discovery.endeavouros.com/installation/installation-intro/2021/03/">Install the OS.</a></li>
+    </ol>
+
+    <h2>Packages.</h2>
+    <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
+    <ol>
+      <li>Default:<code>sudo pacman -Syu vivaldi vivaldi-ffmpeg-codecs xscreensaver gufw libreoffice-still hunspell hunspell-nl hunspell-en_GB mpv gnome-disk-utility redshift noto-fonts-emoji catfish calibre okular geany</code></li>
+      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc</code></li>
+      <li>Install the <a href="https://mega.nz/sync">MEGA Desktop Client</a> .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
+      <li>Install the <a href="https://qalculate.github.io/downloads.html">Qalculate!</a> tar.xz file, by unpacking it and running the following command: <code>./install</code> </li>
+      <li><a href="https://github.com/wxMaxima-developers/docker-wxmaxima/releases">wxMaxima</a>: sudo chmod +x filename, double click to execute.</li>
+      <li>Macros, ad blocker: <code>yay -Syu autokey-gtk<!-- ckb-next --> hblock</code><br>
+      (Run <code>hblock</code> in commandline to install, and run <code>cat /etc/hosts</code> to <a href="https://github.com/hectorm/hblock#installation">verify</a>.)</li>
+      <li>Subliminal (<a href="https://wiki.archlinux.org/index.php/Mpv#Scripts">script</a> for easy subtitles in MPV): <code>pip install subliminal</code></li>
+      <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
+    </ol>
+
+    <h2>Settings. [this is a note to self]</h2>
+    <p>Whisker, panel, search actions, <del>DNS</del> (<a href="https://web.archive.org/web/20210203123125/https://adguard.com/en/adguard-dns/setup.html">AdGuard</a>, <a href="https://wiki.archlinux.org/title/Openresolv#Defining_multiple_values_for_options">openresolv</a>), Vivaldi, autokey, redshift, mkv scripts, xscreensaver…</p>
+
+    <h2>Redshift</h2>
+    <p>Place <a href="https://github.com/jonls/redshift/blob/master/redshift.conf.sample">this file</a> in .config/redshift/redshift.conf. Use the following line as startup command: <code>redshift-gtk -c ./.config/redshift/redshift.conf</code></p>
+
+    <!-- <h2>ckb-next macros.</h2>
+    <p><code>+lctrl,+c,-c,-lctrl</code>, <code>+lctrl,+v,-v,-lctrl</code></p> -->
+
+    <!-- <h2>Login commands.</h2>
+    <p>Add the following line to .profile in home directory [doesn't always work for some reason]: <code>sudo msi-keyboard -m normal -c left,off,low -c middle,off,low -c right,off,low</code></p> -->
+
+    <h2>Steps to reinitialize git folder after format.</h2>
+    <p><code>cd &ltrepo-folder&gt<br>git init<br>git remote add origin &lturl&gt<br>git fetch<br>git reset origin/master</code>
+    </p>
+
+    <!-- Isn't permanent. -->
+    <!-- <h2>Remove Chromium or Firefox as default application.</h2>
+    <p>Clicking an URL in Telegram used to open Vivaldi browser by default, until I installed Firefox or Chromium even when Vivaldi still being the default browser. To fix this go to <code>/usr/share/applications/</code>, open <code>mimeinfo.cache</code> and remove <code>chromium.desktop</code> or <code>firefox.desktop</code> from the items where it's listed first; I assume placing <code>vivaldi-stable.desktop</code> first will work as well.</p> -->
+
+    <!-- <h2>Extensions in VSCodium.</h2>
+    <p>Create <a href="https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace">project.json</a> at ~/.config/VSCodium containing:<br>
+      <code>{
+        "extensionsGallery": {
+          "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+          "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+          "itemUrl": "https://marketplace.visualstudio.com/items",
+          "controlUrl": "",
+          "recommendationsUrl": ""
+        }
+      }</code></p> -->
+    
+    <h2><a href="https://averagelinuxuser.com/clean-arch-linux/">Clean</a>.</h2>
+    <ul>
+      <li>Cache: <code>sudo pacman -Sc</code></li>
+      <li>Unused: <code>sudo pacman -Rns $(pacman -Qtdq)</code></li>
+      <li>Home: <code>rm -rf ~/.cache/*</code></li>
+    </ul>
+    <p class="button-return"><a href="../note.html">←</a> <a href="/">⌂</a></p>
+  </div>
+</body>
+
+</html>

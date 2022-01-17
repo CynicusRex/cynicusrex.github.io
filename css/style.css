@@ -1,0 +1,537 @@
+/* Variables */
+:root {
+  --bg-color: antiquewhite;
+  --border-color: rgba(0, 0, 0, 0.25);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Global */
+
+* {
+  font-family: serif, Georgia, "Times New Roman", Times;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  text-align: center;
+}
+
+code {
+  display: inline-block;
+  background-color: rgba(172, 255, 47, 0.514);
+}
+
+.important {
+  color: tomato;
+}
+
+.ascii {
+    font-family: monospace;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Index */
+
+#cr-sub-title, #navbar {
+  text-align: center;
+}
+
+#cr-title {
+  color: black;
+}
+
+#cr-sub-title {
+  font-weight: normal;
+}
+
+#navbar h3 {
+  font-size: medium;
+  display: inline-block;
+}
+
+#index-telegram-invite, #index-telegram-invite img {
+  text-align: center;
+}
+
+#index-telegram-invite img {
+  width: 1.2rem;
+  display: inline;
+  margin-bottom: -0.2rem;
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 0.9rem;
+  bottom: 0rem;
+  left: 0rem;
+  color: rgba(0,0,0,0.5);
+  background-color: var(--bg-color);
+  font-size: 0.33rem;
+  margin-bottom: 0rem;
+  padding-top: 0.15rem;
+  text-align: center;
+  box-shadow: 0 0 0.5rem 0.125rem var(--bg-color);
+}
+
+#footer a {
+  opacity: 0.5;
+}
+/*———————————————————————————————————————————————————————————————*/
+/* beggar */
+
+#beggar-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* bio */
+
+#bio-pic {
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: 0.875rem;
+  width: 9.5rem;
+  height: 9.5rem;
+}
+
+#bio-intro {
+  display: block;
+}
+
+#bio-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#bio-page .sub-title {
+  text-align: center;
+}
+
+#exp-container, #edu-container {
+  display: inline-block;
+  max-width: 20rem;
+  vertical-align: top;
+}
+
+#butterfly img {
+  width: 4.56rem;
+  height: 4.31rem;
+}
+
+#butterfly-container {
+  height: 9rem; /* Prevents it from drawing above text. */
+  text-align: center;
+}
+
+@keyframes translateButterfly {
+  from {
+    margin-top: -0.125rem;
+  }
+  to {
+    margin-top: 0.5rem;
+  }
+}
+
+@keyframes rotateButterfly {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+#butterfly {
+  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+  font-size: 0.625rem;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* blog */
+
+#blog h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#blog h3 {
+  margin-bottom: 0;
+}
+
+#blog p {
+  margin-top: 0;
+}
+
+#blog li {
+  text-align: left;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* quotes */
+
+#quotes-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+.quote-year {
+  font-size: 0.75rem;
+  display: inline;
+}
+
+#quotes-page a {
+  text-decoration: none;
+}
+
+.strong-quote {
+  background-color: rgba(106, 255, 106, 0.13);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Software */
+
+#setup-page {
+  text-align: left;
+}
+
+#setup-page li {
+  text-align: left;
+}
+
+#setup-page div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+  max-width: 29rem;
+}
+
+#setup-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Portfolio */
+
+#portfolio-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#portfolio-page img {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0.25rem;
+}
+
+#thesis-jan img {
+  height: 20.5rem;
+}
+
+#thesis-vladie img {
+  height: 19.5rem;
+}
+
+#portfolio-page iframe {
+  margin-bottom: 0.25rem;
+}
+
+#amigara-screenshots img, #magnolia-screenshots img {
+  height: 7.5rem;
+}
+
+#scifi-props img {
+  height: 11.7rem;
+}
+
+#scifi-props img:last-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img {
+  height: 9.5rem;
+}
+
+#stevens-mod img:nth-child(1), #stevens-mod img:nth-child(2) {
+  width: 100%;
+  height: auto;
+}
+
+#stevens-mod img {
+  height: 9rem;
+}
+
+#city-scene img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#city-scene img {
+  height: 7.75rem;
+}
+
+#dm-vault img {
+  height: 10.8rem;
+}
+
+#tractor-wip img:first-child {
+  width: 40rem;
+  height: auto;
+}
+
+#tractor-wip img {
+  height: 11.6rem;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait){
+    #portfolio-page img, #portfolio-page iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Symbols */
+
+.symbol-box {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 30rem;
+}
+
+.monospace-symbols {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.inv-on-android {
+  color: grey;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Music */
+
+.yt-song {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.yt-song p {
+  width: 18.75rem;
+}
+
+.yt-song .media-source {
+  height: 2rem;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Light YouTube Embeds by @labnol */
+/* Web: http://labnol.org/?p=27941 */
+
+.youtube-player {
+  position: relative;
+  width: 18.75rem;
+  height: 11.25rem;
+  overflow: hidden;
+  background: #000;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.youtube-player img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.youtube-player .play {
+  position: absolute;
+  width: 7.5rem;
+  height: 5.25rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -3.75rem;
+  margin-top: -2.625rem;
+  background: url("../img/play.png") no-repeat;
+  cursor: pointer;
+  transform: scale(0.6,0.6);
+}
+
+.youtube-player .play:hover {
+  transform: scale(0.55,0.55);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Readability */
+
+.readability {
+  max-width: 42rem;
+  margin: auto;
+  hyphens: none;
+}
+
+.media-source {
+  margin-top: 0.313rem;
+  font-size: smaller;
+}
+
+.sub-title {
+  font-size: 1.313rem;
+  font-weight: normal;
+}
+
+.asterisk {
+  text-decoration: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.edit-list {
+  text-decoration: underline;
+  cursor: progress;
+  color: darkslategrey;
+}
+
+.quote {
+  text-align: left;
+  border-left: 0.125rem dashed grey;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.inline-quote {
+  color: grey;
+}
+
+.readability img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.readability td {
+  vertical-align: top;
+}
+
+.readability a {
+  /* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: none;
+}
+
+.readability iframe {
+  display: block;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait){
+     iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.readability video {
+  max-width: 42rem;
+  width: 100%;
+}
+
+.button-return {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.button-return a {
+  text-decoration: none;
+}
+
+.comment {
+  font-style: italic;
+}
+
+.end-crown {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.mid-ornament {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.hr-short {
+  border: 0;
+  width: 3rem;
+  border-top: dashed 0.125rem rgba(0, 0, 0, 0.42);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hr-long {
+  border: 0;
+  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
+}
+
+.source {
+  font-size: small;
+  font-family: monospace;
+  vertical-align: text-top;
+}
+
+.source a {
+  text-decoration: none
+}
+
+.dagger {
+  font-family: monospace;
+  vertical-align: text-top;
+}
+
+li ul li {
+  list-style-type: lower-alpha;
+}
+
+.footnote {
+  margin: 0;
+}
