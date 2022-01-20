@@ -47,7 +47,7 @@
     <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
     <ol>
       <li>Default:<code>sudo pacman -Syu vivaldi vivaldi-ffmpeg-codecs xscreensaver gufw libreoffice-still hunspell hunspell-nl hunspell-en_GB mpv gnome-disk-utility redshift noto-fonts-emoji catfish calibre okular geany</code></li>
-      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc</code></li>
+      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts, selectable at install -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc code falkon imwheel</code></li>
       <li>Install the <a href="https://mega.nz/sync">MEGA Desktop Client</a> .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
       <li>Install the <a href="https://qalculate.github.io/downloads.html">Qalculate!</a> tar.xz file, by unpacking it and running the following command: <code>./install</code> </li>
       <li><a href="https://github.com/wxMaxima-developers/docker-wxmaxima/releases">wxMaxima</a>: sudo chmod +x filename, double click to execute.</li>
@@ -57,8 +57,8 @@
       <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
     </ol>
 
-    <h2>Settings. [this is a note to self]</h2>
-    <p>Whisker, panel, search actions, <del>DNS</del> (<a href="https://web.archive.org/web/20210203123125/https://adguard.com/en/adguard-dns/setup.html">AdGuard</a>, <a href="https://wiki.archlinux.org/title/Openresolv#Defining_multiple_values_for_options">openresolv</a>), Vivaldi, autokey, redshift, mkv scripts, xscreensaver…</p>
+    <h2>Settings to configure. [this is a note to self]</h2>
+    <p>Whisker, panel, search actions, <del>DNS</del> (<a href="https://web.archive.org/web/20210203123125/https://adguard.com/en/adguard-dns/setup.html">AdGuard</a>, <a href="https://wiki.archlinux.org/title/Openresolv#Defining_multiple_values_for_options">openresolv</a>), Vivaldi, autokey, redshift, mkv scripts, xscreensaver, IMWheel…</p>
 
     <h2>Redshift</h2>
     <p>Place <a href="https://github.com/jonls/redshift/blob/master/redshift.conf.sample">this file</a> in .config/redshift/redshift.conf. Use the following line as startup command: <code>redshift-gtk -c ./.config/redshift/redshift.conf</code></p>
@@ -72,10 +72,6 @@
     <h2>Steps to reinitialize git folder after format.</h2>
     <p><code>cd &ltrepo-folder&gt<br>git init<br>git remote add origin &lturl&gt<br>git fetch<br>git reset origin/master</code>
     </p>
-
-    <!-- Isn't permanent. -->
-    <!-- <h2>Remove Chromium or Firefox as default application.</h2>
-    <p>Clicking an URL in Telegram used to open Vivaldi browser by default, until I installed Firefox or Chromium even when Vivaldi still being the default browser. To fix this go to <code>/usr/share/applications/</code>, open <code>mimeinfo.cache</code> and remove <code>chromium.desktop</code> or <code>firefox.desktop</code> from the items where it's listed first; I assume placing <code>vivaldi-stable.desktop</code> first will work as well.</p> -->
 
     <!-- <h2>Extensions in VSCodium.</h2>
     <p>Create <a href="https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace">project.json</a> at ~/.config/VSCodium containing:<br>
