@@ -80,6 +80,7 @@ code {
 #footer a {
   opacity: 0.5;
 }
+
 /*———————————————————————————————————————————————————————————————*/
 /* beggar */
 
@@ -477,7 +478,6 @@ code {
 .button-return {
   margin-top: 1rem;
   text-align: center;
-  font-size: 1.75rem;
 }
 
 .button-return a {
@@ -510,7 +510,8 @@ code {
 
 .hr-long {
   border: 0;
-  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
+  /* border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21); */
+  border-bottom: 0.06rem solid grey;
 }
 
 .source {
