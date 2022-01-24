@@ -69,9 +69,30 @@
     <!-- <h2>Login commands.</h2>
     <p>Add the following line to .profile in home directory [doesn't always work for some reason]: <code>sudo msi-keyboard -m normal -c left,off,low -c middle,off,low -c right,off,low</code></p> -->
 
-    <h2>Steps to reinitialize git folder after format.</h2>
-    <p><code>cd &ltrepo-folder&gt<br>git init<br>git remote add origin &lturl&gt<br>git fetch<br>git reset origin/master</code>
-    </p>
+    <h2>Steps to reinitialize git folder after format. [Probably not the right way to do it any more]</h2>
+    <p><code>cd &ltrepo-folder&gt<br>
+      git init<br>
+      git remote add origin &lturl&gt<br>
+      git fetch<br>
+      git reset origin/main
+    </code></p>
+
+    <h2>…or create a new repository on the command line.</h2>
+    <p><code>echo "# REPONAME" >> README.md<br>
+      git init<br>
+      git add README.md<br>
+      git commit -m "first commit"<br>
+      git branch -M main<br>
+      git remote add origin https://github.com/USERNAME/REPONAME<br>
+      git push -u origin main
+    </code></p>
+    
+    <h2>…or create a new repository on the command line.</h2>
+    <p><code>
+      git remote add origin https://github.com/USERNAME/REPONAME<br>
+      git branch -M main<br>
+      git push -u origin main
+    </code></p>
 
     <!-- <h2>Extensions in VSCodium.</h2>
     <p>Create <a href="https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace">project.json</a> at ~/.config/VSCodium containing:<br>
@@ -91,6 +112,10 @@
       <li>Unused: <code>sudo pacman -Rns $(pacman -Qtdq)</code></li>
       <li>Home: <code>rm -rf ~/.cache/*</code></li>
     </ul>
+
+    <h2>Miscellaneous.</h2>
+    <p>Here's a nearly exhaustive <a href="./software.html">list of software</a> I use and recommend.</p>
+
     <hr class="hr-long">
     <p class="button-return"><a href="../note.html">← Return</a> | <a href="/">⌂ Home</a> | <a href="../support.html">€ Support</a></p>
   </div>
