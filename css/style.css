@@ -57,9 +57,10 @@ code {
 }
 
 #index-telegram-invite img {
-  width: 1.2rem;
+  width: 1.5rem;
   display: inline;
-  margin-bottom: -0.2rem;
+  margin: 0.25rem;
+  margin-right: 0.063rem;
 }
 
 #footer {
