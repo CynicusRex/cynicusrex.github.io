@@ -52,11 +52,11 @@ code {
   display: inline-block;
 }
 
-#index-telegram-invite, #index-telegram-invite img {
+#index-together, #index-invites {
   text-align: center;
 }
 
-#index-telegram-invite img {
+#index-invites img {
   width: 1.5rem;
   display: inline;
   margin: 0.25rem;
