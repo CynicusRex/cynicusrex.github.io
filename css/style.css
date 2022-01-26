@@ -35,21 +35,8 @@ code {
 /*———————————————————————————————————————————————————————————————*/
 /* Index */
 
-#cr-sub-title, #navbar {
+#cr-sub-title, #bio-sub-title, #navbar {
   text-align: center;
-}
-
-#cr-title {
-  color: black;
-}
-
-#cr-sub-title {
-  font-weight: normal;
-}
-
-#navbar h3 {
-  font-size: medium;
-  display: inline-block;
 }
 
 #index-together, #index-invites {
@@ -398,7 +385,7 @@ code {
 /* Readability */
 
 .readability {
-  max-width: 42rem;
+  max-width: 39rem;
   margin: auto;
   hyphens: none;
 }
@@ -409,8 +396,7 @@ code {
 }
 
 .sub-title {
-  font-size: 1.313rem;
-  font-weight: normal;
+  text-align: justify;
 }
 
 .asterisk {
