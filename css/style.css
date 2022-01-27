@@ -430,6 +430,8 @@ code {
   text-decoration: underline;
   cursor: progress;
   color: darkslategrey;
+  width: fit-content;
+  float: right; /* find other solution, this should be in .align-right */
 }
 
 .quote {
