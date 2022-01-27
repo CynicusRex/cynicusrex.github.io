@@ -77,12 +77,30 @@ code {
 /*———————————————————————————————————————————————————————————————*/
 /* bio */
 
-#bio-pic {
+#bio-pic-container {
   float: left;
+  text-align: center;
+}
+
+#bio-pic {
   margin-right: 0.5rem;
   margin-top: 0.875rem;
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 9.375rem;
+  height: 9.375rem;
+  background: url("../img/sentient-stack-of-atoms.jpg");
+}
+
+#bio-pic:hover {
+  transform: scale(2);
+  transition: .1s;
+  background: url("../img/fbi-enhanced-small.jpg");
+}
+
+#bio-pic-text {
+  font-size: small;
+  font-style: italic;
+  text-decoration: none;
+  color: black;
 }
 
 #bio-intro {
