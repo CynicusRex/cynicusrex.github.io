@@ -63,6 +63,11 @@ code {
   box-shadow: 0 0 0.5rem 0.125rem var(--bg-color);
 }
 
+.sotw, #BenRaemers {
+  text-align: center;
+  margin: auto;
+}
+
 #footer a {
   opacity: 0.5;
 }
