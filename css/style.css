@@ -94,18 +94,18 @@ code {
 }
 
 #bio-pic {
-  width: 14.25rem;
-  height: 14.25rem;
+  width: 9.375rem;
+  height: 9.375rem;
   background: url("../img/sentient-stack-of-stardust.jpg");
-  background-size: 14.25rem 14.25rem;
+  background-size: 9.375rem 9.375rem;
   border-radius: 0.375rem;
 }
 
 #bio-pic:hover {
-  transform: scale(1.25);
+  transform: scale(1.85);
   transition: .25s;
   background: url("../img/fbi-enhanced-stardust-small.jpg");
-  background-size: 14.25rem 14.25rem;
+  background-size: 9.375rem 9.375rem;
 }
 
 #bio-pic-text {
@@ -261,7 +261,7 @@ code {
 }
 
 #amigara-screenshots img, #magnolia-screenshots img {
-  height: 7.14.25rem;
+  height: 7.9.375rem;
 }
 
 #scifi-props img {
