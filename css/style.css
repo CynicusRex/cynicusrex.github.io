@@ -92,14 +92,16 @@ code {
 #bio-pic {
   width: 9.375rem;
   height: 9.375rem;
-  background: url("../img/sentient-stack-of-atoms.jpg");
+  background: url("../img/sentient-stack-of-stardust.jpg");
+  background-size: 9.375rem 9.375rem;
   border-radius: 0.375rem;
 }
 
 #bio-pic:hover {
   transform: scale(1.85);
   transition: .25s;
-  background: url("../img/fbi-enhanced-small.jpg");
+  background: url("../img/fbi-enhanced-stardust.jpg");
+  background-size: 9.375rem 9.375rem;
 }
 
 #bio-pic-text {
@@ -135,6 +137,7 @@ code {
 #butterfly-container {
   height: 9rem; /* Prevents it from drawing above text. */
   text-align: center;
+  margin-top: 1rem;
 }
 
 @keyframes translateButterfly {
@@ -242,11 +245,11 @@ code {
 }
 
 #thesis-jan img {
-  height: 20.5rem;
+  height: 19.25rem;
 }
 
 #thesis-vladie img {
-  height: 19.5rem;
+  height: 18.25rem;
 }
 
 #portfolio-page iframe {
@@ -254,11 +257,11 @@ code {
 }
 
 #amigara-screenshots img, #magnolia-screenshots img {
-  height: 7.5rem;
+  height: 7.15rem;
 }
 
 #scifi-props img {
-  height: 11.7rem;
+  height: 10.85rem;
 }
 
 #scifi-props img:last-child {
@@ -272,7 +275,7 @@ code {
 }
 
 #blarney-castle img {
-  height: 9.5rem;
+  height: 8.85rem;
 }
 
 #stevens-mod img:nth-child(1), #stevens-mod img:nth-child(2) {
@@ -281,7 +284,7 @@ code {
 }
 
 #stevens-mod img {
-  height: 9rem;
+  height: 8.4rem;
 }
 
 #city-scene img:first-child {
@@ -290,11 +293,11 @@ code {
 }
 
 #city-scene img {
-  height: 7.75rem;
+  height: 7.20rem;
 }
 
 #dm-vault img {
-  height: 10.8rem;
+  height: 10rem;
 }
 
 #tractor-wip img:first-child {
@@ -303,7 +306,7 @@ code {
 }
 
 #tractor-wip img {
-  height: 11.6rem;
+  height: 11.25rem;
 }
 
 @media (pointer:none), (pointer:coarse) {
