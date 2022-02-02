@@ -100,7 +100,7 @@ code {
 #bio-pic:hover {
   transform: scale(1.85);
   transition: .25s;
-  background: url("../img/fbi-enhanced-stardust.jpg");
+  background: url("../img/fbi-enhanced-stardust-small.jpg");
   background-size: 9.375rem 9.375rem;
 }
 
