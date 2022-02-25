@@ -434,7 +434,13 @@ code {
   text-decoration: none;
 }
 
-.align-right {
+.margin-comment {
+  margin-left: auto; 
+  margin-right: 0; 
+  width: 21rem;
+}
+
+.align-right, .margin-comment {
   text-align: right;
 }
 
