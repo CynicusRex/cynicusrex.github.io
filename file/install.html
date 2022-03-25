@@ -47,7 +47,7 @@
     <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
     <ol>
       <li>Default:<code>sudo pacman -Syu vivaldi vivaldi-ffmpeg-codecs xscreensaver gufw libreoffice-still hunspell hunspell-nl hunspell-en_GB mpv gnome-disk-utility redshift noto-fonts-emoji catfish calibre okular geany</code></li>
-      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts, selectable at install -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc code imwheel</code></li>
+      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts, selectable at install -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc code imwheel bluez bluez-utils blueman</code></li>
       <li>Install the <a href="https://mega.nz/sync">MEGA Desktop Client</a> .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
       <li>Install the <a href="https://qalculate.github.io/downloads.html">Qalculate!</a> tar.xz file, by unpacking it and running the following command: <code>./install</code> </li>
       <li><a href="https://github.com/wxMaxima-developers/docker-wxmaxima/releases">wxMaxima</a>: sudo chmod +x filename, double click to execute.</li>
@@ -62,6 +62,9 @@
 
     <h2>Redshift</h2>
     <p>Place <a href="https://github.com/jonls/redshift/blob/master/redshift.conf.sample">this file</a> in .config/redshift/redshift.conf. Use the following line as startup command: <code>redshift-gtk -c ./.config/redshift/redshift.conf</code></p>
+
+    <h2>Bluetooth</h2>
+    <p><code>sudo systemctl start bluetooth</code></p>
 
     <!-- <h2>ckb-next macros.</h2>
     <p><code>+lctrl,+c,-c,-lctrl</code>, <code>+lctrl,+v,-v,-lctrl</code></p> -->
