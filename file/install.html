@@ -37,17 +37,19 @@
     <hr class="hr-long">
 
     <ol>
-      <li>Backup everything you don’t want to lose on a separate medium. It helps if you have a second computer if something breaks and you can't do anything on your current machine.</li>
+      <li>Backup what you don’t want to lose on a separate medium. It helps if you have a second PC in case something breaks, rendering your current PC temporarily unusable.</li>
       <li><a href="https://endeavouros.com/latest-release/">Download the OS</a> and <a href="https://discovery.endeavouros.com/installation/create-install-media-usb-key/2021/03/">create the install medium</a> (e.g., USB key).</li>
-      <li>To launch the OS from the USB key: reboot and press F2, or F11 (or one of the other F keys; during the start up it usually mentions which button to push to change boot device), or DELETE during the startup to pick/edit the drive to boot from.</li>
+      <li>To launch the OS from the USB key: reboot and press F2, or F11 (or some other F-key; during the start up it usually mentions which button to push to change boot device), or DELETE during the startup to pick/edit the drive to boot from.</li>
       <li><a href="https://discovery.endeavouros.com/installation/installation-intro/2021/03/">Install the OS.</a></li>
     </ol>
+
+    <hr class="hr-long">
 
     <h2>Packages.</h2>
     <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
     <ol>
-      <li>Default:<code>sudo pacman -Syu vivaldi vivaldi-ffmpeg-codecs xscreensaver gufw libreoffice-still hunspell hunspell-nl hunspell-en_GB mpv gnome-disk-utility redshift noto-fonts-emoji catfish calibre okular geany</code></li>
-      <li>Optional:<code>sudo pacman -Syu <!-- linux-lts, selectable at install -->telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc code imwheel bluez bluez-utils blueman</code></li>
+      <li>Default:<code>sudo pacman -Syu --needed vivaldi vivaldi-ffmpeg-codecs xscreensaver gufw libreoffice-still hunspell hunspell-nl hunspell-en_GB mpv gnome-disk-utility redshift noto-fonts-emoji catfish calibre okular</code></li>
+      <li>Optional:<code>sudo pacman -Syu --needed linux-lts telegram-desktop xfce4-systemload-plugin lyx texlive-most texstudio torbrowser-launcher kdenlive yakuake clementine element-desktop python-pip discord sagemath sagemath-doc code imwheel bluez bluez-utils blueberry pulseaudio-bluetooth audio-recorder geany</code></li>
       <li>Install the <a href="https://mega.nz/sync">MEGA Desktop Client</a> .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
       <li>Install the <a href="https://qalculate.github.io/downloads.html">Qalculate!</a> tar.xz file, by unpacking it and running the following command: <code>./install</code> </li>
       <li><a href="https://github.com/wxMaxima-developers/docker-wxmaxima/releases">wxMaxima</a>: sudo chmod +x filename, double click to execute.</li>
@@ -57,20 +59,27 @@
       <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
     </ol>
 
-    <h2>Settings to configure. [this is a note to self]</h2>
+    <hr class="hr-long">
+
+    <h2>To configure.</h2>
     <p>Whisker, panel, search actions, <del>DNS</del> (<a href="https://web.archive.org/web/20210203123125/https://adguard.com/en/adguard-dns/setup.html">AdGuard</a>, <a href="https://wiki.archlinux.org/title/Openresolv#Defining_multiple_values_for_options">openresolv</a>), Vivaldi, autokey, redshift, mkv scripts, xscreensaver, IMWheel, vscode extensions (Code Spell Checker, Live Server)…</p>
 
     <h2>Redshift</h2>
     <p>Place <a href="https://github.com/jonls/redshift/blob/master/redshift.conf.sample">this file</a> in .config/redshift/redshift.conf. Use the following line as startup command: <code>redshift-gtk -c ./.config/redshift/redshift.conf</code></p>
 
     <h2>Bluetooth</h2>
-    <p><code>sudo systemctl start bluetooth</code></p>
+    <p>From <a href="https://wiki.archlinux.org/title/Bluetooth">wiki.archlinux.org/title/Bluetooth.</a></p>
+    <p>Run bluetooth instantly, for a single session: <code>sudo systemctl start bluetooth</code> <br> run bluetooth permanently (after rebooting): <code>sudo systemctl enable bluetooth</code> <br> run bluetooth instantly, permanently: <code>sudo systemctl enable --now bluetooth</code></p>
+
+    <p>Auto power-on after boot/resume, and discoverable on startup: <code>sudo geany /etc/bluetooth/main.conf</code> <br> →  [Policy] → AutoEnable=true <br> → [General] → DiscoverableTimeout = 0</p>
 
     <!-- <h2>ckb-next macros.</h2>
     <p><code>+lctrl,+c,-c,-lctrl</code>, <code>+lctrl,+v,-v,-lctrl</code></p> -->
 
     <!-- <h2>Login commands.</h2>
     <p>Add the following line to .profile in home directory [doesn't always work for some reason]: <code>sudo msi-keyboard -m normal -c left,off,low -c middle,off,low -c right,off,low</code></p> -->
+
+    <hr class="hr-long">
 
     <h2>Steps to reinitialize git folder after format. [Probably not the right way to do it any more]</h2>
     <p><code>cd &ltrepo-folder&gt<br>
@@ -96,6 +105,8 @@
       git branch -M main<br>
       git push -u origin main
     </code></p>
+
+    <hr class="hr-long">
 
     <!-- <h2>Extensions in VSCodium.</h2>
     <p>Create <a href="https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions-marketplace">project.json</a> at ~/.config/VSCodium containing:<br>
