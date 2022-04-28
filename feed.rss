@@ -6,7 +6,6 @@
   <link>https://www.cynicusrex.com</link>
   <description>My musings on nothing and everything, frequently influenced by Cynicism, which I interpret as the pursuit of modernity in proportion to nature 🌳.</description>
   <language>en-gb</language>
-  <comments>https://t.me/cynicusrex</comments>
   <image>
     <title>Cynicus Rex</title>
     <url>https://www.cynicusrex.com/img/crown.jpg</url>
@@ -21,87 +20,87 @@
   <item>
     <title>“Belgium's little Einstein”, isn't, yet.</title>
     <description>In response to “‘Belgium’s little Einstein’: The 11 year old boy who is the world’s youngest science graduate”, The Brussels Times, Monday, 14 March 2022.</description>
-    <link>https://www.cynicusrex.com/file/noteinsteinyet.html</link>
-    <pubDate>18 March 2022, 23:15</pubDate>
+    <guid>https://www.cynicusrex.com/file/noteinsteinyet.html</guid>
+    <pubDate>Fri, 18 Mar 2022 23:15:00 +0200</pubDate>
   </item>
   <item>
     <title>Einstein's theory of antiwork.</title>
     <description>From antiwork in the USA to “tang ping” (躺平) or “lying flat” in China, people are fed up with the grind. Could it be that we shouldn't live to work, but work to live? That we shouldn't serve the economy, but the economy should serve us?</description>
-    <link>https://www.cynicusrex.com/file/antiwork.html</link>
-    <pubDate>18 February 2022, 18:01</pubDate>
+    <guid>https://www.cynicusrex.com/file/antiwork.html</guid>
+    <pubDate>Fri, 18 Feb 2022 18:01:00 +0200</pubDate>
   </item>
   <item>
     <title>Ode to 889.</title>
     <description>“Are you going to write an article about number 889 too?” —rudy235. Yes.</description>
-    <link>https://www.cynicusrex.com/file/889.html</link>
-    <pubDate>24 January 2022</pubDate>
+    <guid>https://www.cynicusrex.com/file/889.html</guid>
+    <pubDate>Mon, 24 Jan 2022 00:00:00 +0200</pubDate>
   </item>
   <item>
     <title>Prime 997 and the significance of 1.</title>
     <description>Divisible only by itself and one. Remarkably simple, but simply amazing.</description>
-    <link>https://www.cynicusrex.com/file/997.html</link>
-    <pubDate>21 January 2022</pubDate>
-    <comments>https://t.me/cynicusrex/26<comments>
+    <guid>https://www.cynicusrex.com/file/997.html</guid>
+    <pubDate>Fri, 21 Jan 2022 00:00:00 +0200</pubDate>
+    <comments>https://t.me/cynicusrex/26</comments>
   </item>
   <item>
     <title>Web4 should run on LaTeX.</title>
     <description>The World Wide Web is broken: it is dominated by a handful of websites, nearly everything is financed by ads, bloated tech needlessly slows down surfing, NFTs and blockchain are digital cancer, et cetera. Stop it. Just stop it.</description>
-    <link>https://www.cynicusrex.com/file/web4.html</link>
-    <pubDate>28 November 2021</pubDate>
+    <guid>https://www.cynicusrex.com/file/web4.html</guid>
+    <pubDate>Sun, 28 Nov 2021 00:00:00 +0200</pubDate>
     <comments>https://t.me/cynicusrex/24</comments>
   </item>
   <item>
     <title>The folly of pride.</title>
     <description>Winning necessarily comes down to luck or the defeat of an inferior. Both are nothing to be proud of. Therefore, we should not compete for the sake of being better than others, but only to improve ourselves and help others do the same.</description>
-    <link>https://www.cynicusrex.com/file/pride.html</link>
-    <pubDate>4 August 2021</pubDate>
+    <guid>https://www.cynicusrex.com/file/pride.html</guid>
+    <pubDate>Wed, 4 Aug 2021 00:00:00 +0200</pubDate>
     <comments>https://t.me/cynicusrex/18</comments>
   </item>
   <item>
     <title>Running shirtless at -3°C.</title>
     <description>On curing sadness with cold showers, excess with Cynicism, and madness with veganism. And if you can't go vegan, eat the rich.</description>
-    <link>https://www.cynicusrex.com/file/cynic.html</link>
-    <pubDate>8 April 2021</pubDate>
+    <guid>https://www.cynicusrex.com/file/cynic.html</guid>
+    <pubDate>Thu, 8 Apr 2021 00:00:00 +0200</pubDate>
     <comments>https://t.me/cynicusrex/8</comments>
   </item>
   <item>
     <title>Money corrupts; bitcoin corrupts absolutely.</title>
     <description>Disregarding all of bitcoin's shortcomings, a financial instrument that brings out the worst in people—greed—won't change the world for the better.</description>
-    <link>https://www.cynicusrex.com/file/cryptocultscience.html</link>
-    <pubDate>12 March 2021</pubDate>
+    <guid>https://www.cynicusrex.com/file/cryptocultscience.html</guid>
+    <pubDate>Fri, 12 Mar 2021 00:00:00 +0200</pubDate>
     <comments>https://t.me/cynicusrex/7</comments>
   </item>
   <item>
     <title>Google couldn't sign me in, so I signed out, indefinitely.</title>
     <description>How Google's insidious behavior led me to find superior alternatives.</description>
-    <link>https://www.cynicusrex.com/file/google.html</link>
-    <pubDate>3 February 2021</pubDate>
+    <guid>https://www.cynicusrex.com/file/google.html</guid>
+    <pubDate>Wed, 3 Feb 2021 00:00:00 +0200</pubDate>
     <comments>https://t.me/cynicusrex/12</comments>
   </item>
   <item>
     <title>I wish I never bought bitcoin.</title>
     <description>Bitcoin incentivizes greed. It robbed me from my childlike curiosity and fascination for science. Bitcoin is the biggest inadvertent pyramid scheme ever and blockchain is snake oil. Take your spam elsewhere.</description>
-    <link>https://www.cynicusrex.com/file/greed.html</link>
-    <pubDate>1 June 2020</pubDate>
+    <guid>https://www.cynicusrex.com/file/greed.html</guid>
+    <pubDate>Mon, 1 Jun 2020 00:00:00 +0200</pubDate>
   </item>
   <item>
     <title>Ad blocking, or how to use the Web properly.</title>
     <description>Because marketing and advertising has ruined the World Wide Web.</description>
-    <link>https://www.cynicusrex.com/file/adblocking.html</link>
-    <pubDate>2020</pubDate>
+    <guid>https://www.cynicusrex.com/file/adblocking.html</guid>
+    <pubDate>Mon, 18 May 2020 00:00:00 +0200</pubDate> <!-- month unknown -->
     <comments>https://t.me/cynicusrex/19</comments>
   </item>
   <item>
     <title>Work less, play more!</title>
     <description>People should do less buying, working, littering, and more reading, exercising, enjoying nature. We all demand change, but we aren't prepared to change ourselves. An article originally written for the magazine Zoeklicht. I omitted one paragraph about bitcoin because I now strongly oppose crypto“currencies”.</description>
-    <link>https://www.cynicusrex.com/file/play.html</link>
-    <pubDate>April 2019</pubDate>
+    <guid>https://www.cynicusrex.com/file/play.html</guid>
+    <pubDate>Mon, 15 Apr 2019 00:00:00 +0200</pubDate> <!-- day unknown -->
   </item>
   <item>
     <title>Wasted my life on distractions.</title>
     <description>This struck me at the age of 28 while attending my lifelong friend’s public doctoral defense. What follows is a mishmash of events that got me here.</description>
-    <link>https://www.cynicusrex.com/file/distractions.html</link>
-    <pubDate>20 March 2019</pubDate>
+    <guid>https://www.cynicusrex.com/file/distractions.html</guid>
+    <pubDate>Wed, 20 Mar 2019 00:00:00 +0200</pubDate>
   </item>
 </channel>
 
