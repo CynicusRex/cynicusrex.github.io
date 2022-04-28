@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
   <title>Cynicus Rex</title>
@@ -11,6 +11,7 @@
     <url>https://www.cynicusrex.com/img/crown.jpg</url>
     <link>https://www.cynicusrex.com</link>
     </image>
+  <atom:link href="https://www.cynicusrex.com/feed.rss" rel="self" type="application/rss+xml" />
   <!-- <item>
     <title></title>
     <description></description>
