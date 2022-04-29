@@ -43,7 +43,7 @@ code {
   font-weight: bold;
 }
 
-#index-together, #index-invites {
+#index-together, #index-invites, .fediring {
   text-align: center;
 }
 
@@ -54,26 +54,12 @@ code {
   margin-right: 0.063rem;
 }
 
-#footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0rem;
-  left: 0rem;
-  color: rgba(0,0,0,0.1);
-  background-color: var(--bg-color);
-  font-size: 0.33rem;
-  margin-bottom: 0rem;
-  text-align: center;
-  box-shadow: 0 0 0.5rem 0.125rem var(--bg-color);
+.fediring {
+  margin-top: -1rem;
 }
 
-.sotw, #BenRaemers {
-  text-align: center;
-  margin: auto;
-}
-
-#footer a {
-  opacity: 0.5;
+.fediring a:first-child, .fediring a:last-child {
+  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
